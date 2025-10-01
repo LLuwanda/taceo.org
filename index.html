@@ -113,10 +113,14 @@
             align-items: center;
         }
         
+        .logo-img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
         .logo-text {
             font-size: 1.5rem;
             font-weight: 700;
-            margin-left: 10px;
         }
         
         nav ul {
@@ -416,8 +420,15 @@
         }
         
         .footer-logo {
+            display: flex;
+            align-items: center;
             font-size: 1.5rem;
             font-weight: 700;
+        }
+        
+        .footer-logo-img {
+            height: 40px;
+            margin-right: 10px;
         }
         
         .footer-links {
@@ -439,6 +450,15 @@
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 0.9rem;
+        }
+        
+        /* Logo in Hero Section */
+        .hero-logo {
+            margin-bottom: 2rem;
+        }
+        
+        .hero-logo-img {
+            height: 80px;
         }
         
         /* Responsive Styles */
@@ -494,6 +514,14 @@
                 flex-direction: column;
                 gap: 20px;
             }
+            
+            .logo-img {
+                height: 40px;
+            }
+            
+            .hero-logo-img {
+                height: 60px;
+            }
         }
     </style>
 </head>
@@ -502,6 +530,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
+                <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo%20(1).jpg" alt="TACEO Logo" class="logo-img">
                 <div class="logo-text">TACEO</div>
             </div>
             <nav>
@@ -520,6 +549,9 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo%20(1).jpg" alt="TACEO Logo" class="hero-logo-img">
+                </div>
                 <h1>EMPOWERING COMMUNITIES FOR SUSTAINABLE DEVELOPMENT</h1>
                 <div class="hero-tagline">Creating opportunities where everyone can thrive</div>
                 <p>Through education, advocacy, and access to resources, we foster sustainable development and collective progress within Tanzanian communities.</p>
@@ -545,10 +577,7 @@
                     <p>Our organization strives to create a safe space for youth, elders, children, and marginalized groups who are the primary targets of TACEO's efforts to identify and address the root causes of these problems.</p>
                 </div>
                 <div class="about-image">
-                    <!-- Placeholder for an image - in a real site, this would be an actual image -->
-                    <div style="width:100%; height:400px; background:var(--gradient-light); display:flex; align-items:center; justify-content:center; color:var(--primary); font-weight:bold;">
-                        TACEO Community Image
-                    </div>
+                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/community%20image.jpg" alt="TACEO Community">
                 </div>
             </div>
         </div>
@@ -689,7 +718,10 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">TACEO</div>
+                <div class="footer-logo">
+                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo%20(1).jpg" alt="TACEO Logo" class="footer-logo-img">
+                    <div>TACEO</div>
+                </div>
                 <div class="footer-links">
                     <a href="#about">About</a>
                     <a href="#what-we-do">Programs</a>
