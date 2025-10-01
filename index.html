@@ -309,6 +309,25 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            /* Default to center positioning */
+            object-position: center;
+        }
+        
+        /* Custom positioning for each team member photo */
+        .member-photo.chairman img {
+            object-position: center 20%;
+        }
+        
+        .member-photo.secretary img {
+            object-position: center 25%;
+        }
+        
+        .member-photo.treasurer img {
+            object-position: center 30%;
+        }
+        
+        .member-photo.coordinator img {
+            object-position: center 20%;
         }
         
         .member-name {
@@ -458,7 +477,7 @@
         }
         
         .hero-logo-img {
-            height: 80px;
+            height: 120px;
         }
         
         /* Responsive Styles */
@@ -520,7 +539,12 @@
             }
             
             .hero-logo-img {
-                height: 60px;
+                height: 80px;
+            }
+            
+            .member-photo {
+                width: 180px;
+                height: 180px;
             }
         }
     </style>
@@ -530,7 +554,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo%20(1).jpg" alt="TACEO Logo" class="logo-img">
+                <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo__1_-removebg-preview.png" alt="TACEO Logo" class="logo-img">
                 <div class="logo-text">TACEO</div>
             </div>
             <nav>
@@ -550,7 +574,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-logo">
-                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo%20(1).jpg" alt="TACEO Logo" class="hero-logo-img">
+                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo__1_-removebg-preview.png" alt="TACEO Logo" class="hero-logo-img">
                 </div>
                 <h1>EMPOWERING COMMUNITIES FOR SUSTAINABLE DEVELOPMENT</h1>
                 <div class="hero-tagline">Creating opportunities where everyone can thrive</div>
@@ -627,7 +651,7 @@
             <h2>Our Team</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-photo">
+                    <div class="member-photo chairman">
                         <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/supawork-photo-20250614T145708132Z.png" alt="Dr Lameck Bonaventure Luwanda">
                     </div>
                     <div class="member-name">
@@ -637,7 +661,7 @@
                 </div>
                 
                 <div class="team-member">
-                    <div class="member-photo">
+                    <div class="member-photo secretary">
                         <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/Hamza%20(2).jpg" alt="Hamza Mbaruku">
                     </div>
                     <div class="member-name">Hamza Mbaruku</div>
@@ -645,7 +669,7 @@
                 </div>
                 
                 <div class="team-member">
-                    <div class="member-photo">
+                    <div class="member-photo treasurer">
                         <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/mwaliley.png" alt="Mwaliley Manase Kanju">
                     </div>
                     <div class="member-name">Mwaliley Manase Kanju</div>
@@ -653,7 +677,7 @@
                 </div>
                 
                 <div class="team-member">
-                    <div class="member-photo">
+                    <div class="member-photo coordinator">
                         <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/Magari.png" alt="Jamaica Nesto Magali">
                     </div>
                     <div class="member-name">Jamaica Nesto Magali</div>
@@ -719,7 +743,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo%20(1).jpg" alt="TACEO Logo" class="footer-logo-img">
+                    <img src="https://raw.githubusercontent.com/LLuwanda/taceo.org/main/taceo_logo__1_-removebg-preview.png" alt="TACEO Logo" class="footer-logo-img">
                     <div>TACEO</div>
                 </div>
                 <div class="footer-links">
